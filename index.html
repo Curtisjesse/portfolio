@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -27,12 +28,267 @@
 			font-family: Roboto;
 			src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
 		}
+		
+		/* Custom styles for experience section */
+		.experience-area {
+			padding: 100px 0;
+			background: #f8f9fa;
+		}
+		
+		.single-experience {
+			background: white;
+			padding: 30px;
+			margin-bottom: 30px;
+			border-radius: 10px;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+			transition: all 0.3s ease;
+		}
+		
+		.single-experience:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+		}
+		
+		.experience-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 15px;
+		}
+		
+		.experience-title {
+			color: #333;
+			font-size: 18px;
+			font-weight: 700;
+			margin: 0;
+		}
+		
+		.experience-company {
+			color: #e70280;
+			font-size: 16px;
+			font-weight: 600;
+			margin: 0;
+		}
+		
+		.experience-date {
+			background: #e70280;
+			color: white;
+			padding: 5px 15px;
+			border-radius: 20px;
+			font-size: 12px;
+			font-weight: 600;
+		}
+		
+		.experience-description {
+			margin-top: 15px;
+		}
+		
+		.experience-description ul {
+			list-style: none;
+			padding: 0;
+		}
+		
+		.experience-description li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 8px;
+			color: #666;
+		}
+		
+		.experience-description li::before {
+			content: "▸";
+			position: absolute;
+			left: 0;
+			color: #e70280;
+			font-weight: bold;
+		}
+		
+		/* Skills section enhancement */
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 30px;
+			margin-top: 40px;
+		}
+		
+		.skill-category {
+			background: white;
+			padding: 25px;
+			border-radius: 10px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+		}
+		
+		.skill-category h4 {
+			color: #e70280;
+			margin-bottom: 15px;
+			font-size: 16px;
+			font-weight: 700;
+		}
+		
+		.skill-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+		
+		.skill-tag {
+			background: #f8f9fa;
+			color: #333;
+			padding: 5px 12px;
+			border-radius: 20px;
+			font-size: 12px;
+			border: 1px solid #e70280;
+		}
+		/* Interests Section Styles */
+.interests-area {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.interests-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.interests-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.interests-icons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.interest-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e70280, #ff6b9d);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    transition: all 0.3s ease;
+}
+
+.interest-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(231, 2, 128, 0.3);
+}
+
+.interest-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.interest-item h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Referees Section Styles */
+.referees-area {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.referees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.referee-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.referee-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #e70280, #ff6b9d);
+}
+
+.referee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.referee-name {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.referee-position {
+    color: #e70280;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.referee-contact {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.referee-contact a {
+    color: #e70280;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.referee-contact a:hover {
+    color: #ff6b9d;
+    text-decoration: underline;
+}
+
+.referee-contact i {
+    margin-right: 8px;
+    color: #e70280;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .interests-icons {
+        gap: 30px;
+    }
+
+    .referees-grid {
+        grid-template-columns: 1fr;
+    }
+}
 	</style>
 </head>
 
-<body class="apihu-port-body" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+<body class="body" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
 
-	<div class="apihu-port-body-overlay"></div>
+	<div class="body-overlay"></div>
 
 	<!-- Preloader-->
 	<div class="loading-preloader" style="display: none;">
@@ -52,36 +308,39 @@
 	<!-- Preloader End -->
 
 	<!-- ScrollTop Button -->
-	<a href="#" class="apihu-port-scroll-top" style="display: none;"><i class="fas fa-chevron-up"></i></a>
+	<a href="#" class="scroll-top" style="display: none;"><i class="fas fa-chevron-up"></i></a>
 
 	<!-- Header Start -->
-	<header class="apihu-port-header-area">
+	<header class="header-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-2 col-lg-2 col-md-2 col-3">
-					<!-- <div class="apihu-port-logo">
+					<!-- <div class="logo">
 						<img src="./assets/curtis.jpg" alt="SaaSio Portfolio" height="20px" width="25px">
 					</div> -->
 				</div>
 				<div class="col-xl-8 d-none d-lg-block text-center col-lg-8">
-					<div class="apihu-port-main-navigation">
+					<div class="main-navigation">
 						<ul>
 							<li><a href="#">Home</a></li>
-							<li><a href="#apihu-port-resume">About</a></li>
-							<li><a href="#apihu-port-feature">Projects</a></li>
-							<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
+							<li><a href="#resume">About</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#feature">Projects</a></li>
+							<li><a href="#pricing-area">Qualifications</a></li>
+							<li><a href="#interests">Interests</a></li>
+        					<li><a href="#referees">Referees</a></li>
 							<li><a href="#contact-details">Contact</a></li>
 
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-2 col-lg-2 col-md-10 col-9 text-right">
-					<div class="apihu-port-header-cta">
-						<a href="https://instagram.com/curtis.jesse.77" target="_blank">Let's Chat <i class="fas fa-comment-dots"></i></a>
+					<div class="header-cta">
+						<a href="mailto:curtisjesse487@gmail.com">Let's Chat <i class="fas fa-comment-dots"></i></a>
 					</div>
 					
 
-					<div class="apihu-port-mobile-menu-hamburger">
+					<div class="mobile-menu-hamburger">
 						<a href="#"><i class="fas fa-bars"></i></a>
 					</div>
 				</div>
@@ -91,14 +350,15 @@
 	<!-- Header End -->
 
 	<!-- Mobile Menu -->
-	<div class="apihu-port-mobile-menu">
-		<a href="#" class="apihu-port-menu-close"><i class="fas fa-times"></i></a>
-		<a href="#" class="apihu-port-logo-wrapper"><img src="./assets/white-logo.png" alt=""></a>
+	<div class="mobile-menu">
+		<a href="#" class="menu-close"><i class="fas fa-times"></i></a>
+		<a href="#" class="logo-wrapper"><img src="./assets/white-logo.png" alt=""></a>
 		<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#apihu-port-resume">About</a></li>
-			<li><a href="#apihu-port-feature">Projects</a></li>
-			<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
+			<li><a href="#resume">About</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#feature">Projects</a></li>
+			<li><a href="#pricing-area">Qualifications</a></li>
 			<li><a href="#contact-details">Contact</a></li>
 		</ul>
 	</div>
@@ -106,48 +366,48 @@
 
 	<!-- Hero Start -->
 
-	<section class="apihu-port-hero-area" id="apihu-port-hero">
+	<section class="hero-area" id="hero">
 
 		<!-- Hero bg shape -->
 
-		<img class="apihu-port-hero-shape-1" src="./assets/hero-shape.png" alt="Shape">
-		<img class="apihu-port-hero-shape-2" src="./assets/python.png" alt="Shape">
-		<!-- <img class="apihu-port-hero-shape-3" src="./assets/flutter.png" alt="Shape"> -->
-		<img class="apihu-port-hero-shape-4" src="./assets/html.png" alt="Shape">
-		<img class="apihu-port-hero-shape-5" src="./assets/sql.png" alt="Shape">
+		<img class="hero-shape-1" src="./assets/hero-shape.png" alt="Shape">
+		<img class="hero-shape-2" src="./assets/python.png" alt="Shape">
+		<!-- <img class="hero-shape-3" src="./assets/flutter.png" alt="Shape"> -->
+		<img class="hero-shape-4" src="./assets/html.png" alt="Shape">
+		<img class="hero-shape-5" src="./assets/sql.png" alt="Shape">
 
 
 
-		<span class="apihu-port-hero-side-style-text">Curtis</span>
+		<span class="hero-side-style-text">Curtis</span>
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-8 col-lg-8">
-					<div class="apihu-port-hero-left">
-						<p class="apihu-port-hero-subtitle wow slideInDown"
+					<div class="hero-left">
+						<p class="hero-subtitle wow slideInDown"
 							style="visibility: visible; animation-name: slideInDown;">Welcome to My World</p>
-						<h1 class="apihu-port-hero-title cd-headline clip is-full-width">Hi there!<br>I’m Curtis
-							Jesse<span class="apihu-port-hero-title-color cd-words-wrapper"
+						<h1 class="hero-title cd-headline clip is-full-width">Hi there!<br>I'm Curtis
+							Jesse<span class="hero-title-color cd-words-wrapper"
 								style="width: 67.5582px; overflow: hidden;">
 							</span>
-							<span class="apihu-port-hero-title-small-text">
+							<span class="hero-title-small-text">
 								<div class="type">
-									<p>I'm into <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+									<p>Backend Developer <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
 								</div>
 							</span>
 						</h1>
 
-						<ul class="apihu-port-hero-btn-wrap wow slideInUp"
+						<ul class="hero-btn-wrap wow slideInUp"
 							style="visibility: visible; animation-name: slideInUp;">
-							<li><a class="apihu-port-primary-btn apihu-port-hero-btn-gradient"
-									href="curtisjesse487@gmail.com">Contact Me +</a></li>
-							<li><a class="apihu-port-secondary-btn apihu-port-hero-btn-white"
-									href="#apihu-port-resume">About Me <i class="fa-solid fa-arrow-down"></i></a></li>
+							<li><a class="primary-btn hero-btn-gradient"
+									href="mailto:curtisjesse487@gmail.com">Contact Me +</a></li>
+							<li><a class="secondary-btn hero-btn-white"
+									href="#resume">About Me <i class="fa-solid fa-arrow-down"></i></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-4">
 					<!-- hero area social -->
-					<div class="apihu-port-hero-social">
+					<div class="hero-social">
 						<ul>
 							<li><a href="https://www.linkedin.com/in/curtis-jesse-b24685228/"><i
 										class="fa-brands fa-linkedin-in"></i></a></li>
@@ -156,9 +416,9 @@
 							</li>
 						</ul>
 					</div>
-					<div class="apihu-port-hero-right wow slideInRight"
+					<div class="hero-right wow slideInRight"
 						style="visibility: visible; animation-name: slideInRight;">
-						<div class="apihu-port-hero-right-img">
+						<div class="hero-right-img">
 							<img src="./assets/curtis.jpg" alt="Hero Area">
 						</div>
 					</div>
@@ -169,25 +429,66 @@
 	<!-- Hero End -->
 
 	<!-- About Start -->
-	<section class="apihu-port-about-area" id="apihu-port-resume">
-		<img src="./assets/about-shape-1.png" alt="" class="apihu-port-about-shape">
+	<section class="about-area" id="resume">
+		<img src="./assets/about-shape-1.png" alt="" class="about-shape">
 
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-6 col-lg-6">
-					<div class="apihu-port-about-left wow slideInLeft"
+					<div class="about-left wow slideInLeft"
 						style="visibility: visible; animation-name: slideInLeft;">
-						<div class="apihu-port-about-img">
+						<div class="about-img">
 							<img src="./assets/left_python.png" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6">
-					<div class="apihu-port-about-right">
-						<h3 class="apihu-port-about-subtitle">About Curtis Jesse</h3>
-						<h2 class="apihu-port-about-title">Passionate and motivated about world technology and <span>Python (Django) </span>.</h2>
-						<p class="apihu-port-about-text">I am <b>Undergraduate IT</b> student at <b>Taita Taveta University. </b>A tech Enthusiast with interest in softaware engineering development and networking to provide solutions to challanging and pressing issssues in the commercial sector.</p>
-						<div class="apihu-port-about-expertise">
+					<div class="about-right">
+						<h3 class="about-subtitle">About Curtis Jesse</h3>
+						<h2 class="about-title">Passionate and motivated <span>IT Graduate</span> specializing in <span>Backend Development</span>.</h2>
+						<p class="about-text">I am an <b>IT Graduate</b> from <b>Taita Taveta University</b> and currently working as a <b>Backend Developer Intern at WHTA Networks</b>. A tech Enthusiast with expertise in software engineering development, database management, and networking to provide solutions to challenging and pressing issues in the commercial sector.</p>
+						
+						<!-- Skills Section -->
+						<div class="skills-grid">
+							<div class="skill-category">
+								<h4><i class="fas fa-code"></i> Programming Languages</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Python</span>
+									<span class="skill-tag">Java</span>
+									<span class="skill-tag">C</span>
+									<span class="skill-tag">JavaScript</span>
+								</div>
+							</div>
+							<div class="skill-category">
+								<h4><i class="fas fa-database"></i> Databases</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Oracle</span>
+									<span class="skill-tag">PostgreSQL</span>
+									<span class="skill-tag">MySQL</span>
+									<span class="skill-tag">SQL Workbench</span>
+								</div>
+							</div>
+							<div class="skill-category">
+								<h4><i class="fas fa-globe"></i> Web Technologies</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Django</span>
+									<span class="skill-tag">RESTful APIs</span>
+									<span class="skill-tag">HTML/CSS</span>
+									<span class="skill-tag">MVC Architecture</span>
+								</div>
+							</div>
+							<div class="skill-category">
+								<h4><i class="fas fa-tools"></i> IT Support</h4>
+								<div class="skill-tags">
+									<span class="skill-tag">Hardware Troubleshooting</span>
+									<span class="skill-tag">OS Installation</span>
+									<span class="skill-tag">Network Setup</span>
+									<span class="skill-tag">System Maintenance</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="about-expertise" style="margin-top: 30px;">
 							<ul class="nav nav-pills" id="pills-tab" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link active show" id="pills-home-tab"
@@ -210,77 +511,136 @@
 	</section>
 	<!-- About End -->
 
+	<!-- Experience Start -->
+	<section class="experience-area" id="experience">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 text-center">
+					<div class="section-heading">
+						<p class="section-subtitle">Professional Journey</p>
+						<h2 class="section-title">Work <span class="section-title-color">Experience</span></h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xl-12">
+					<!-- Current Experience -->
+					<div class="single-experience wow fadeInUp" data-wow-delay="0.2s">
+						<div class="experience-header">
+							<div>
+								<h3 class="experience-title">Backend Developer Intern</h3>
+								<h4 class="experience-company">WHTA Networks</h4>
+							</div>
+							<span class="experience-date">June 2024 - June 2025</span>
+						</div>
+						<div class="experience-description">
+							<ul>
+								<li>Ensured data consistency and security through effective database management</li>
+								<li>Implemented API endpoints to enhance front-end functionality</li>
+								<li>Collaborated with front-end developers to seamlessly integrate user-facing elements</li>
+								<li>Contributed to team meetings and the planning and execution of IT solutions</li>
+								<li>Designed and implemented RESTful APIs to enable efficient data exchange</li>
+								<li>Developed and maintained a user profile platform, improving user interaction and experience</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- Previous Experience -->
+					<div class="single-experience wow fadeInUp" data-wow-delay="0.4s">
+						<div class="experience-header">
+							<div>
+								<h3 class="experience-title">IT Support Intern</h3>
+								<h4 class="experience-company">Kenyatta University</h4>
+							</div>
+							<span class="experience-date">May 2023 - August 2023</span>
+						</div>
+						<div class="experience-description">
+							<ul>
+								<li>Installed different operating systems and configured system environments</li>
+								<li>Crimped different types of network devices like hub and switch</li>
+								<li>Setup network infrastructure using modems and routers</li>
+								<li>Troubleshooted internet access issues and operated network switches</li>
+								<li>Connected various printers and resolved slow running PC performance issues</li>
+								<li>Used XAMPP to set up PHP programming environments and designed database solutions</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Experience End -->
+
 	<!-- Service Start -->
-	<section class="apihu-port-service-area" id="apihu-port-feature">
-		<img class="apihu-port-service-shape-1" src="./assets/service-shape-1.png" alt="Service Shape">
-		<img class="apihu-port-service-shape-2" src="./assets/service-shape-2.png" alt="Service Shape">
+	<section class="service-area" id="feature">
+		<img class="service-shape-1" src="./assets/service-shape-1.png" alt="Service Shape">
+		<img class="service-shape-2" src="./assets/service-shape-2.png" alt="Service Shape">
 
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12 text-center">
-					<div class="apihu-port-section-heading">
-						<p class="apihu-port-section-subtitle">Trying to make this section powerful and inspiring.</p>
-						<h2 class="apihu-port-section-title">Projects and <span
-								class="apihu-port-section-title-color">Achievements</span>.</h2>
+					<div class="section-heading">
+						<p class="section-subtitle">Showcasing my technical capabilities and achievements.</p>
+						<h2 class="section-title">Projects and <span
+								class="section-title-color">Achievements</span>.</h2>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xl-3 col-lg-3 col-md-6">
-					<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.2s"
+					<div class="single-service wow fadeInUp" data-wow-delay="0.2s"
 						style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-						<div class="apihu-port-service-icon-box">
-							<i class="fa-solid fa-chart-bar"></i>
+						<div class="service-icon-box">
+							<i class="fa-solid fa-graduation-cap"></i>
 						</div>
-						<h3 class="apihu-port-single-service-title">Furniture shop</h3>
-						<p class="apihu-port-single-service-text">A project using python(Django) that enhances the functoionality of a furniture shop.
+						<h3 class="single-service-title">School Management System</h3>
+						<p class="single-service-text">A comprehensive web application developed using Django for managing student enrollment, class scheduling, and grade tracking with user-friendly interface.
 						</p>
-						<a class="apihu-port-single-service-btn" href="https://github.com/curtisjesse/myweb">Read More <i class="fas fa-plus"></i></a>
+						<a class="single-service-btn" href="https://github.com/Curtisjesse/school">Read More <i class="fas fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-6">
-					<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.4s"
+					<div class="single-service wow fadeInUp" data-wow-delay="0.4s"
 						style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-						<div class="apihu-port-service-icon-box">
-							<i class="fa-solid fa-robot"></i>
+						<div class="service-icon-box">
+							<i class="fa-solid fa-hospital"></i>
 						</div>
-						<h3 class="apihu-port-single-service-title">Hospital Management system</h3>
-						<p class="apihu-port-single-service-text">The project uses java programming language  by the use of the JFrame which is connected to Xampp database.
+						<h3 class="single-service-title">Hospital Management System</h3>
+						<p class="single-service-text">Java-based desktop application using JFrames connected to XAMPP database for managing hospital operations, patient records, and administrative tasks.
 						</p>
-						<a class="apihu-port-single-service-btn" href="https://github.com/curtisjesse/php-connection">Read More <i class="fas fa-plus"></i></a>
+						<a class="single-service-btn" href="https://github.com/Curtisjesse/php-connection">Read More <i class="fas fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-6">
-					<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.6s"
+					<div class="single-service wow fadeInUp" data-wow-delay="0.6s"
 						style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-						<div class="apihu-port-service-icon-box">
-							<i class="fa-solid fa-paintbrush"></i>
+						<div class="service-icon-box">
+							<i class="fa-solid fa-gamepad"></i>
 						</div>
-						<h3 class="apihu-port-single-service-title">SharPy</h3>
-						<p class="apihu-port-single-service-text">
-							An OpenCV based drawing tool to draw shapes and curves without any physical interaction with
-							system. Currently in development phase</p>
-						<a class="apihu-port-single-service-btn" href="#">Read More <i class="fas fa-plus"></i></a>
+						<h3 class="single-service-title">Probability Game</h3>
+						<p class="single-service-text">
+							A Java-based game that uses probability algorithms to determine winning outcomes, demonstrating mathematical programming concepts and game logic implementation.</p>
+						<a class="single-service-btn" href="https://github.com/Curtisjesse/cloneMpesa/blob/master/guessGame.java">Read More <i class="fas fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-6">
-					<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.8s"
+					<div class="single-service wow fadeInUp" data-wow-delay="0.8s"
 						style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
-						<div class="apihu-port-service-icon-box">
-							<i class="fa-solid fa-code-merge"></i>
+						<div class="service-icon-box">
+							<i class="fa-solid fa-shopping-cart"></i>
 						</div>
-						<h3 class="apihu-port-single-service-title">Hacktober Fest</h3>
-						<p class="apihu-port-single-service-text">Completed HactoberFest with acceptance of 4+ PR on
-							GitHub. </p>
-						<a class="apihu-port-single-service-btn" href="#">Read More <i class="fas fa-plus"></i></a>
+						<h3 class="single-service-title">Furniture Shop</h3>
+						<p class="single-service-text">Django-based e-commerce platform for furniture retail with product catalog, shopping cart functionality, and customer management features.</p>
+						<a class="single-service-btn" href="https://github.com/curtisjesse/myweb">Read More <i class="fas fa-plus"></i></a>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xl-12 text-center">
-					<div class="apihu-port-service-load-more-btn">
-						<a href="#">Load More <i class="fas fa-plus"></i></a>
+					<div class="service-load-more-btn">
+						<a href="https://github.com/curtisjesse">View More on GitHub <i class="fas fa-external-link-alt"></i></a>
 					</div>
 				</div>
 			</div>
@@ -289,27 +649,27 @@
 	<!-- Service End -->
 
 	<!-- CTA Start -->
-	<section class="apihu-port-cta-area">
-		<img class="apihu-port-cta-shape" src="./assets/cta-bg.png" alt="Cta shape">
+	<section class="cta-area">
+		<img class="cta-shape" src="./assets/cta-bg.png" alt="Cta shape">
 
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
-					<div class="apihu-port-cta-content-wrap">
+					<div class="cta-content-wrap">
 
-						<img class="apihu-port-cta-container-shape" src="./assets/cta-bg-shape.png"
+						<img class="cta-container-shape" src="./assets/cta-bg-shape.png"
 							alt="Cta container shape">
 
 						<div class="row">
 							<div class="col-xl-8 col-lg-8">
-								<div class="apihu-port-cta-content-text">
-									<p>Get It Touch</p>
+								<div class="cta-content-text">
+									<p>Get In Touch</p>
 									<h2>Have a Project on Your Mind</h2>
 									<a href="#contact-details">Contact Me +</a>
 								</div>
 							</div>
 							<div class="col-xl-4 col-lg-4">
-								<div class="apihu-port-cta-content-img">
+								<div class="cta-content-img">
 									<img src="./assets/cta-right.png" alt="Call to action area">
 								</div>
 							</div>
@@ -322,32 +682,30 @@
 	<!-- CTA End -->
 
 	<!-- Pricing Start -->
-	<section class="apihu-port-pricing-area" id="apihu-port-pricing-area">
-		<img class="apihu-port-pricing-shape-left" src="./assets/pricing-left-shape.png" alt="Pricing Area Shape left">
-		<img class="apihu-port-pricing-shape-right" src="./assets/pricing-right-shape.png"
+	<section class="pricing-area" id="pricing-area">
+		<img class="pricing-shape-left" src="./assets/pricing-left-shape.png" alt="Pricing Area Shape left">
+		<img class="pricing-shape-right" src="./assets/pricing-right-shape.png"
 			alt="Pricing Area Shape right">
 
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12 text-center">
-					<div class="apihu-port-section-heading">
-						<p class="apihu-port-section-subtitle">Qualifications</p>
-						<h2 class="apihu-port-section-title">Academic and Professional</h2>
-						<p class="apihu-port-section-text">
-
-						</p>
+					<div class="section-heading">
+						<p class="section-subtitle">Qualifications</p>
+						<h2 class="section-title">Academic and Professional Background</h2>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-xl-4 col-lg-4 col-md-6">
-					<div class="apihu-port-single-pricing wow fadeInUp" data-wow-delay="0.2s"
+					<div class="single-pricing wow fadeInUp" data-wow-delay="0.2s"
 						style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
 						<h3></h3>
 						<h4>Bavuni Secondary School</h4>
 						<ul>
 							<li><i class="fa-solid fa-location-pin"></i> Nakuru</li>
+							<li><i class="fa-solid fa-calendar"></i> 2016 - 2019</li>
 							<li><img src="./assets/ais.png" alt="ais_img"></li>
 						</ul>
 						<a>
@@ -357,16 +715,17 @@
 				</div>
 
 				<div class="col-xl-4 col-lg-4 col-md-6">
-					<div class="apihu-port-single-pricing wow fadeInUp" data-wow-delay="0.2s"
-						style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+					<div class="single-pricing wow fadeInUp" data-wow-delay="0.4s"
+						style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
 						<h3>BSc. in Information Technology</h3>
 						<h4>Taita Taveta University</h4>
 						<ul>
-							<li><i class="fa-solid fa-location-pin"></i> Taita Taveta </li>
-							<li><img src="./assets/glb.png" alt="ais_img"></li>
+							<li><i class="fa-solid fa-location-pin"></i> Taita Taveta</li>
+							<li><i class="fa-solid fa-calendar"></i> 2020 - 2024</li>
+							<li><img src="./assets/glb.png" alt="university_img"></li>
 						</ul>
 						<a>
-							Expected (2024) <i class="fa-solid fa-business-time"></i>
+							Graduated (2024) <i class="fa-solid fa-graduation-cap"></i>
 						</a>
 					</div>
 				</div>
@@ -375,16 +734,98 @@
 		</div>
 	</section>
 	<!-- Pricing End -->
+		<!-- Interests Start -->
+	<section class="interests-area" id="interests">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 text-center">
+					<div class="section-heading">
+						<p class="section-subtitle">More About Me</p>
+						<h2 class="section-title">Hobbies & <span class="section-title-color">Interests</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="interests-content">
+						<p>I enjoy <strong>listening to music</strong> and <strong>hiking</strong> during my free time. These activities help me stay creative and balanced while maintaining a healthy work-life balance.</p>
+						<div class="interests-icons">
+							<div class="interest-item wow fadeInUp" data-wow-delay="0.2s">
+								<div class="interest-icon">
+									<i class="fas fa-music"></i>
+								</div>
+								<h4>Music</h4>
+							</div>
+							<div class="interest-item wow fadeInUp" data-wow-delay="0.4s">
+								<div class="interest-icon">
+									<i class="fas fa-mountain"></i>
+								</div>
+								<h4>Hiking</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Interests End -->
+
+	<!-- Referees Start -->
+	<section class="referees-area" id="referees">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 text-center">
+					<div class="section-heading">
+						<p class="section-subtitle">Professional References</p>
+						<h2 class="section-title">My <span class="section-title-color">Referees</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="referees-grid">
+						<div class="referee-card wow fadeInUp" data-wow-delay="0.2s">
+							<h3 class="referee-name">Millicent Jepkoech</h3>
+							<p class="referee-position">Software Engineer, Safaricom Ltd</p>
+							<div class="referee-contact">
+								<p><i class="fas fa-envelope"></i>Email: <a href="mailto:mjepkoech1@gmail.com">mjepkoech1@gmail.com</a></p>
+								<p><i class="fas fa-phone"></i>Phone: +254-715 109 743</p>
+							</div>
+						</div>
+						
+						<div class="referee-card wow fadeInUp" data-wow-delay="0.4s">
+							<h3 class="referee-name">O.O Emmanuel</h3>
+							<p class="referee-position">Managing Director, wHTa Networks</p>
+							<div class="referee-contact">
+								<p><i class="fas fa-envelope"></i>Email: <a href="mailto:gmwaura@ttu.ac.ke">interns@whtanetworks.com</a></p>
+								<p><i class="fas fa-phone"></i>Phone: +254-782 499 113</p>
+							</div>
+						</div>
+						
+						<div class="referee-card wow fadeInUp" data-wow-delay="0.6s">
+							<h3 class="referee-name">Madam Grace Mwaura</h3>
+							<p class="referee-position">Head of Department, Taita Taveta University</p>
+							<div class="referee-contact">
+								<p><i class="fas fa-envelope"></i>Email: <a href="mailto:gmwaura@ttu.ac.ke">gmwaura@ttu.ac.ke</a></p>
+								<p><i class="fas fa-phone"></i>Phone: +254-714 215 679</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Referees End -->
 
 
 	<!-- Contact Start -->
-	<section class="apihu-port-contact-area" id="contact-details">
+	<section class="contact-area" id="contact-details">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 text-left">
-					<div class="apihu-port-section-heading">
-						<p class="apihu-port-section-subtitle">Contact Me</p>
-						<h2 class="apihu-port-section-title">Get in Touch With Me</h2>
+					<div class="section-heading">
+						<p class="section-subtitle">Contact Me</p>
+						<h2 class="section-title">Get in Touch With Me</h2>
 					</div>
 				</div>
 
@@ -393,22 +834,50 @@
 			<div class="row">
 
 				<div class="col-xl-6">
-					<div class="apihu-port-contact-right">
-						<div class="apihu-port-contact-right-img">
+					<div class="contact-right">
+						<div class="contact-right-img">
 							<img src="./assets/contact-illust.png" alt="Contact Right">
 						</div>
-						<div class="apihu-port-contact-right-content">
+						<div class="contact-right-content">
 
-							<div class="apihu-port-contact-text">
-								<span class="apihu-port-contact-number">
-									<a href="mailto:curtisjesse487@gmail.com">MailTo:
-										<font style="font-weight: bold; color: #e70280;">curtisjesse487@gmail.com</font>
+							<div class="contact-text">
+								<!-- Email -->
+								<span class="contact-number">
+									<a href="mailto:curtisjesse487@gmail.com">
+										<i class="fa-solid fa-envelope" style="color: #D44638;"></i> Email: 
+										<font style="font-weight: bold; color: #D44638;">curtisjesse487@gmail.com</font>
 									</a>
 								</span>
-								
-								<span class="apihu-port-contact-email"><a href="https://instagram.com/curtis.jesse.77/" target="_blank">DM on
-										Instagram: <font style="font-weight: bold; color: #e70280;">curtis.jesse.77</font>
-										</a></span>
+
+								<!-- Phone -->
+								<span class="contact-email">
+									<a href="tel:+254741594863">
+										<i class="fa-solid fa-phone" style="color: #1E90FF;"></i> Phone: 
+										<font style="font-weight: bold; color: #1E90FF;">+254 741 594 863</font>
+									</a>
+								</span>
+
+								<!-- WhatsApp -->
+								<span class="contact-email">
+									<a href="https://wa.me/254741594863" target="_blank">
+										<i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp: 
+										<font style="font-weight: bold; color: #25D366;">+254 741 594 863</font>
+									</a>
+								</span>
+
+								<!-- Instagram -->
+								<span class="contact-email">
+									<a href="https://instagram.com/curtis.jesse.77/" target="_blank">
+										<i class="fa-brands fa-instagram" style="color: #E4405F;"></i> Instagram: 
+										<font style="font-weight: bold; color: #E4405F;">curtis.jesse.77</font>
+									</a>
+								</span>
+
+								<!-- Location -->
+								<span class="contact-location">
+									<i class="fa-solid fa-location-pin" style="color: #FF5733;"></i> Location: 
+									<font style="font-weight: bold; color: #FF5733;">P.O. Box 4061 – 20100, Nakuru, Kenya</font>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -441,6 +910,12 @@
 								<i class="fa-solid fa-phone" style="color: yellow;"></i> +254 741 594 863
 							</a>
 						</li>
+
+						<li>
+							<a href="https://wa.me/254741594863">
+								<i class="fab fa-whatsapp" style="color: yellow;"></i> WhatsApp Chat
+							</a>
+						</li>
 						
 						<li>
 							<a href="mailto:curtisjesse487@gmail.com">
@@ -456,9 +931,9 @@
 					<h6>Quick Links</h6>
 					<ul class="footer-links">
 						<li><a href="#">Home</a></li>
-						<li><a href="#apihu-port-resume">About</a></li>
-						<li><a href="#apihu-port-feature">Projects</a></li>
-						<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
+						<li><a href="#resume">About</a></li>
+						<li><a href="#feature">Projects</a></li>
+						<li><a href="#pricing-area">Qualifications</a></li>
 						<li><a href="#contact-details">Contact</a></li </ul>
 				</div>
 			</div>

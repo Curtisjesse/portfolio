@@ -59,13 +59,13 @@ Last change:    00/00/00
 				$(window).on("scroll", function(){
 					var ScrollBarLocation = $(this).scrollTop();
 					if( ScrollBarLocation > 150 ) {
-						$(".apihu-port-scroll-top").fadeIn(); 
+						$(".scroll-top").fadeIn(); 
 					} else {
-						$(".apihu-port-scroll-top").fadeOut();
+						$(".scroll-top").fadeOut();
 					}
 				});
 
-				$(".apihu-port-scroll-top").on("click", function(e){
+				$(".scroll-top").on("click", function(e){
 					e.preventDefault(); 
 					$("body,html").animate({
 						scrollTop: 0,
@@ -75,7 +75,7 @@ Last change:    00/00/00
 
 			APIHUPORTNavScroll: function (){
 				//Desktop Menu
-				$('.apihu-port-main-navigation li a').on("click", function(){
+				$('.main-navigation li a').on("click", function(){
 					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 						var target = $(this.hash);
 						target = target.length ? target : $('[name="DCSext.Level"' + this.hash.slice(1) +']');
@@ -89,7 +89,7 @@ Last change:    00/00/00
 				});
 
 				// /Mobile Menu 
-				$('.apihu-port-mobile-menu li a').on("click", function(){
+				$('.mobile-menu li a').on("click", function(){
 					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 						var target = $(this.hash);
 						target = target.length ? target : $('[name="DCSext.Level"' + this.hash.slice(1) +']');
@@ -108,61 +108,61 @@ Last change:    00/00/00
 				$(window).on("scroll", function(){
 					var ScrollBarPostion = $(window).scrollTop(); 
 					if (ScrollBarPostion > 150 ) {
-						$(".apihu-port-header-area").addClass("apihu-port-header-sticky"); 
+						$(".header-area").addClass("header-sticky"); 
 					} else {
-						$(".apihu-port-header-area").removeClass("apihu-port-header-sticky");
+						$(".header-area").removeClass("header-sticky");
 					}
 				});
 			},
 
 			APIHUPORTMobileMenu: function (){
-				$(".apihu-port-mobile-menu-hamburger").on("click", function(e){
+				$(".mobile-menu-hamburger").on("click", function(e){
 					e.preventDefault();
-					$(".apihu-port-mobile-menu").toggleClass("apihu-port-mobile-menu-on");
-					$(".apihu-port-body-overlay").toggleClass("apihu-port-body-overlay-on");
+					$(".mobile-menu").toggleClass("mobile-menu-on");
+					$(".body-overlay").toggleClass("body-overlay-on");
 				});
 
-				$(".apihu-port-body-overlay").on("click", function(){
-					$(".apihu-port-mobile-menu").removeClass("apihu-port-mobile-menu-on");
-					$(".apihu-port-mobile-menu-open").removeClass("open");
+				$(".body-overlay").on("click", function(){
+					$(".mobile-menu").removeClass("mobile-menu-on");
+					$(".mobile-menu-open").removeClass("open");
 				});
 
-				$(".apihu-port-menu-close").on("click", function(){
-					$(".apihu-port-mobile-menu").removeClass("apihu-port-mobile-menu-on");
-					$(".apihu-port-body-overlay").removeClass("apihu-port-body-overlay-on"); 
-					$(".apihu-port-mobile-menu-open").removeClass("open");
+				$(".menu-close").on("click", function(){
+					$(".mobile-menu").removeClass("mobile-menu-on");
+					$(".body-overlay").removeClass("body-overlay-on"); 
+					$(".mobile-menu-open").removeClass("open");
 				});
 
-				$(".apihu-port-dropdown.has-submenu a").each(function(){
+				$(".dropdown.has-submenu a").each(function(){
 					$(this).on("click", function(e){
 						e.preventDefault();
-						$('.apihu-port-dropdown-menu').slideToggle();
-						$(this).parent().toggleClass('apihu-port-submenu-icon-rotate');
+						$('.dropdown-menu').slideToggle();
+						$(this).parent().toggleClass('submenu-icon-rotate');
 					});
 				});
 			},
 
 			APIHUPORTPortfolio: function () {
-				var $grid = $('.apihu-port-portfolio-grid').isotope({
-					itemSelector: '.apihu-port-portfolio-item',
+				var $grid = $('.portfolio-grid').isotope({
+					itemSelector: '.portfolio-item',
 					percentPosition: true,
 					masonry: {
 						columnWidth: 1
 					}
 				});
 
-				$('.apihu-port-portfolio-navigation').on('click', 'li', function() {
+				$('.portfolio-navigation').on('click', 'li', function() {
 					var filterValue = $(this).attr('data-filter');
 					$grid.isotope({filter: filterValue});
 				});
 				
-				$('.apihu-port-portfolio-navigation').on('click', 'li', function() {
+				$('.portfolio-navigation').on('click', 'li', function() {
 					$(this).addClass('active').siblings().removeClass('active');
 				});
 			},
 			
 			APIHUPORTTestimonialCarousel: function (){
-				$(".apihu-port-testimonial-slider").owlCarousel({
+				$(".testimonial-slider").owlCarousel({
 					loop: true,
 					nav: true,
 					navText: ['<i class="flaticon-left-arrow"></i>','<i class="flaticon-right-arrow"></i>'],
@@ -182,7 +182,7 @@ Last change:    00/00/00
 			},
 
 			APIHUPORTClientsCarousel: function() {
-				$(".apihu-port-clients-carousel").owlCarousel({
+				$(".clients-carousel").owlCarousel({
 					loop: true,
 					nav: false,
 					dots: false,
@@ -202,7 +202,7 @@ Last change:    00/00/00
 			},
 
 			APIHUPORTBlogCarousel: function() {
-				$('.apihu-port-blog-carousel').owlCarousel({
+				$('.blog-carousel').owlCarousel({
 					loop: true,
 					nav: false,
 					dots: true,
